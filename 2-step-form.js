@@ -12,7 +12,7 @@ $('[name="email"]').blur(function(){
     $.ajax({
       type: 'POST',
       crossDomain: true,
-      url: 'https://domain.com/validation.php?email='+email, // Update path to PHP
+      url: 'https://domain.com/validation.php?email='+email, // Update path to PHP file
       success: function(jsondata){ 
         if (jsondata=="valid") {
           $('[name="email"]').css({"border-color": "rgb(74, 137, 32)", "border-width":"3px", "border-style":"solid", "border-radius":"5px"});  
